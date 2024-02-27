@@ -1,1 +1,30 @@
+def count_positives_sum_negatives(arr):
+  
+  counter = 0
+  
+  neg_list = []
+  
+  
+  for i in arr:
+	
+	if i > 0:
+	  
+	  counter += 1
+	
+	elif i < 0:
+	  
+	  neg_list.append(i)
+	  
+  
+  sum_neg = sum(neg_list)
+  
+  
+  return [counter, sum_neg]
 
+
+
+#Given an array of integers.
+
+#Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+#If the input is an empty array or is null, return an empty array.
