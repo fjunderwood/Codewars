@@ -5,26 +5,19 @@
 #If the input is an empty array or is null, return an empty array.
 
 
-
-def count_positives_sum_negatives(arr):
-  
-  counter = 0
-  
-  neg_list = []
-  
-  
-  for i in arr:
-	
-	if i > 0:
-	  
-	  counter += 1
-	
-	elif i < 0:
-	  
-	  neg_list.append(i)
-	  
-  
-  sum_neg = sum(neg_list)
-  
-  
-  return [counter, sum_neg]
+def count_positives_sum_negatives(arr): 
+    
+    counter = 0 
+    neg_total = 0
+    
+    for i in arr: 
+        
+        if i > 0: 
+            
+            counter += 1  
+        
+        elif i < 0: 
+            
+            neg_total += i
+    
+    return [counter, neg_total] if len(arr) != 0 else []
