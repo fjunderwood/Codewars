@@ -1,0 +1,13 @@
+def invert(list):
+
+  new_list = []
+
+  for i in list:
+    i = i * -1
+    new_list.append(i)
+
+  return new_list
+
+
+
+# Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
