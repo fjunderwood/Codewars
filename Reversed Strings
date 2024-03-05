@@ -1,0 +1,7 @@
+def solution(string):
+
+  return "".join(reversed(string))
+
+
+
+# Complete the solution so that it reverses the string passed into it.
