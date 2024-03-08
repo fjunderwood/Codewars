@@ -1,0 +1,12 @@
+def repeat_str(repeat, string):
+
+
+
+    new_str = [string for i in range (repeat)]
+    
+        
+    return "".join(map(str, new_str))
+
+
+
+# Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
