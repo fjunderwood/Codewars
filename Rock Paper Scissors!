@@ -1,0 +1,49 @@
+class Choice():
+    
+    R = "rock"
+    P = "paper"
+    S = "scissors"
+
+def rps(p1, p2):
+    
+    if p1 == p2:
+        return "Draw!"
+    
+    elif p1 == Choice.R:
+        if p2 == Choice.S:
+            return "Player 1 won!"
+        else:
+            return "Player 2 won!"
+            
+    elif p1 == Choice.P:
+        if p2 == Choice.R:
+            return "Player 1 won!"
+        else:
+            return "Player 2 won!"
+            
+    elif p1 == Choice.S:
+        if p2 == Choice.P:
+            return "Player 1 won!"
+        else:
+            return "Player 2 won!"
+
+
+
+# Let's play! You have to return which player won! In case of a draw return Draw!.
+
+
+# Examples(Input1, Input2 --> Output):
+
+'''
+"scissors", "paper" 
+        --> 
+  "Player 1 won!"
+
+"scissors", "rock" 
+        --> 
+  "Player 2 won!"
+
+"paper", "paper" 
+      --> 
+    "Draw!"
+'''
