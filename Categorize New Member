@@ -10,16 +10,19 @@ ver. 2:
 
 def open_or_senior(data):
 
+    cat_list = []
+
 	for i in data:
 	
-	   if i[0] >= 55 and i[1] > 7:
+		if i[0] >= 55 and i[1] > 7:
 	   
-		   return "Senior"
+			cat_list.append("Senior")
 	   
-	   else:
+		else:
    
-		   return "Open"
-
+			cat_list.append("Open")
+			
+	return cat_list
 
 
 
