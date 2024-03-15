@@ -1,0 +1,70 @@
+ver. 1:
+
+
+def reverse(seq):
+
+    for i in range(len(seq) >> 1):
+		
+		seq[i], seq[-i-1] = seq[-i-1], seq[i]
+	
+
+
+ver. 2:
+
+
+def reverse(seq):
+
+	for i in range(int(len(seq)/2)):
+		
+		seq[i], seq[-i-1] = seq[-i-1], seq[i]
+
+
+
+# Examples:
+
+'''
+
+
+[1,2,3,4,5]
+-->
+[5,4,3,2,1]
+
+['?','you','are','how','world','hello']
+-->
+['hello','world','how','are','you','?']
+
+[{'b':2},{'a':1}]
+-->
+[{'a':1},{'b':2}]
+
+
+'''
+
+
+
+# Write a function that will take in any array and reverse it. 
+
+# Sounds simple doesn't it? 
+
+
+# You are not allowed to use the following:
+'''
+	- python 2
+	- slice notations
+	- defining an empty list: []. Use		   
+	  "x=list()" instead if you need it
+	- list comprehensions
+	- the spread operator inside    square 
+	  brackets
+	- "tuple" and "reversed" builtins have 
+	  been deactivated
+'''
+
+# The "list" builtin has been replaced with another implementation with the following specifications:
+'''
+	- list.reverse is forbidden
+	- list.__reversed__ is forbidden
+	- slicing is forbidden
+'''
+
+#All other usual methods of the list class are still present.
