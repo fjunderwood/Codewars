@@ -1,0 +1,38 @@
+import re 
+
+
+def solution(s):
+
+	return re.sub(r'([A-Z][a-z]*)', r' \1', s)
+	
+	
+	
+
+
+# Examples:
+
+'''
+
+"consecutiveCApitals" 
+=>
+"consecutive C Apitals"
+
+"camelCasing"
+=> 
+"camel Casing"
+
+
+"identifier" 
+=> 
+"identifier"
+
+
+"" 
+=>
+""
+
+'''
+
+
+
+# Complete the solution so that the function will break up camel casing, using a space between words.
