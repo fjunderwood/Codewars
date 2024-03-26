@@ -1,0 +1,38 @@
+def triple_x(s):
+
+
+	for i, c in enumerate(s[:-2]):
+	
+		if c == 'x':
+			
+			return c == s[i+1] and c == s[i+2]
+		
+	return False
+	
+
+			
+
+
+
+# Examples:
+
+'''
+
+"abraxxxas" → True
+
+"xoxotrololololololoxxx" → False
+
+"softX kitty, warm kitty, xxxxx" → True
+
+"softx kitty, warm kitty, xxxxx" → False
+
+'''
+
+
+
+
+# Given a string, return true if the first instance of "x" in the string is immediately followed by the string "xx".
+
+# Capital X's do not count as an occurrence of "x".
+ 
+# If there are no "x"'s then return false
