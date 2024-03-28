@@ -1,0 +1,32 @@
+def high_and_low(numbers):
+
+	list = [int(i) for i in numbers.split()]
+	
+	high = max(list)
+	low = min(list)
+	
+	return f"{high} {low}"
+
+
+
+# Examples
+
+'''
+
+("1 2 3 4 5")
+=> 
+"5 1"
+
+("1 2 -3 4 5") 
+=> 
+"5 -3"
+
+("1 9 3 4 -5") 
+=> 
+"9 -5"
+
+'''
+
+
+
+# In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
